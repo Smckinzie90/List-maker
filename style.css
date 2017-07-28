@@ -1,0 +1,79 @@
+html {
+  font-size: 16px;
+  font-family: Helvetica;
+  background-color: #B8B8B8;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: arial;
+}
+
+p {
+  max-width: 30rem;
+}
+
+form {
+    display: inline-block;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+	width: 10rem;
+	background-color: #000000;
+	border-radius: 0.5rem;
+	text-align: center;
+	margin: 0.5rem;
+  transition: 200ms;
+}
+
+#button:hover, #button:active {
+  height: 2.5rem;
+  width: 12.5rem;
+  font-size: 1.25rem;
+  background-color: #256B12;
+  margin: 0.25rem;
+}
+
+
+#button a {
+  font-family: arial;
+	font-weight: bold;
+	color:#ffffff;
+  text-decoration: none;
+}
+
+.list {
+  min-height: 10rem;
+  min-width: 20rem;
+  background-color: #D4CE6A;
+  margin: 1.5rem;
+  border: 2px solid #000000;
+  border-radius: 1rem;
+}
+
+.list div {
+  margin: 0.5rem;
+}
+
+.list div a {
+  color: #000000;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.list div a:hover, .list div a:active {
+  color: #cc0000;
+}
