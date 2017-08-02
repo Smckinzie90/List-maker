@@ -25,7 +25,15 @@ form {
     display: inline-block;
 }
 
-#button {
+#input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,23 +46,29 @@ form {
   transition: 200ms;
 }
 
-#button:hover, #button:active {
+.button:hover, .button:active {
   height: 2.5rem;
   width: 12.5rem;
   font-size: 1.25rem;
-  background-color: #256B12;
   margin: 0.25rem;
 }
 
+#add:hover, #add:active {
+  background-color: #256B12;
+}
 
-#button a {
+#clear:hover, #clear:active {
+  background-color: #cc0000;
+}
+
+.button a {
   font-family: arial;
 	font-weight: bold;
 	color:#ffffff;
   text-decoration: none;
 }
 
-.list {
+#list {
   min-height: 10rem;
   min-width: 20rem;
   background-color: #D4CE6A;
@@ -63,17 +77,31 @@ form {
   border-radius: 1rem;
 }
 
-.list div {
+#list div {
   margin: 0.5rem;
 }
 
-.list div a {
+#list div a {
   color: #000000;
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
 }
 
-.list div a:hover, .list div a:active {
+#list div a:hover, .list div a:active {
   color: #cc0000;
+}
+
+@media only screen and (min-width: 1280px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  #list {
+    min-height: 25rem;
+  }
 }
